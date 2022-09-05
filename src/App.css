@@ -1,10 +1,51 @@
 .App {
-  text-align: center;
+  text-align: left;
+  border-color: gray;
+  border-width: 2px;
+  border-style: groove;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#cierre {
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#cierre:hover {
+  background-color: red;
+  color: white;
+}
+
+#mini {
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#mini:hover {
+  background-color: rgb(107, 107, 218);
+  color: white;
+}
+
+#acc {
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#acc:hover {
+  background-color: rgb(142, 153, 151);
+  color: white;
+}
+
+.titulo {
+  margin-left: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +55,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -32,7 +72,70 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Estilos de Todo y cuerpo*/
+.cuerpo {
+  text-align: center;
+  border-color: gray;
+  border-width: 2px;
+  border-style: groove;
+  border-bottom: 0px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr 1fr 1fr 1fr 2fr 2fr;
+}
+.right{
+  text-align: left;
+}
+.left{
+  text-align: center;
+}
+.Listatitulo {
+
+  font-size: 30px;
+}
+
+.btn-delete {
+  margin-left: 400px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: red;
+  color: white;
+}
+
+/*Estilos del formulario*/
+.formulario {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.btn1 {
+  font-size: 20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: white;
+  color: black;
+}
+
+.tdo {
+  font-size: 25px;
 }
